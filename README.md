@@ -1,0 +1,2 @@
+# skubit-satoshidice
+Android SatoshiDice
