@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="drawer_items">      
+        <item>My Bets</item>
+        <item>Place Bet</item>  
+        <item>Blockchain Addresses</item>         
+        <item>Settings</item>     
+    </string-array>
+
+</resources>

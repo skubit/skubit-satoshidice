@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/betScroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Bet Parameters"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Roll Under To Win"
+                android:textSize="@dimen/text_medium" />
+
+            <com.skubit.satoshidice.placebet.BetEditText
+                android:id="@+id/underEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="5" />
+        </LinearLayout>
+        <!-- Win Chance -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Win Chance"
+                android:textSize="@dimen/text_medium" />
+
+            <com.skubit.satoshidice.placebet.BetEditText
+                android:id="@+id/winEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+        <!-- Payout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Payout Multiple"
+                android:textSize="@dimen/text_medium" />
+
+            <com.skubit.satoshidice.placebet.BetEditText
+                android:id="@+id/payoutEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/betParameters"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Make Bet"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <!-- Bet Amount -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bet Amount"
+                android:textSize="@dimen/text_medium" />
+
+            <com.skubit.satoshidice.placebet.BetEditText
+                android:id="@+id/betAmountEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:text="0.00000000"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="12" />
+        </LinearLayout>
+        <!-- Profit on Win -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profit on Win"
+                android:textSize="@dimen/text_medium" />
+
+            <com.skubit.satoshidice.placebet.BetEditText
+                android:id="@+id/profitEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="12"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/betBtn"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_button"
+            android:text="ROLL DICE"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+</ScrollView>

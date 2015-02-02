@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SatoshiDice</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="transactions_refresh_error">Could not sync transactions.</string>
+    <string name="wallet_balance_label">CURRENT BALANCE</string>
+    <string name="wallet_balance_def">-.----</string>
+
+        <!-- zxing -->
+    <string name="barcode_scan_message">Place a Bitcoin barcode inside the\nviewfinder to scan it.</string>
+</resources>

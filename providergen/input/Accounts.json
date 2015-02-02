@@ -1,0 +1,32 @@
+{
+    "fields": [
+        {
+            "name": "nickName",
+            "type": "String"
+        },
+        {
+            "name": "secret",
+            "type": "String"
+        },
+        {
+            "name": "date",
+            "type": "Long"
+        },
+        {
+            "name": "depositAddress",
+            "type": "String"
+        },
+        {
+            "name": "withdrawAddress",
+            "type": "String"
+         },
+         {
+            "name": "icon",
+            "type": "String"
+         },
+         {
+            "name": "hash",
+            "type": "String"
+         }
+        ]
+}

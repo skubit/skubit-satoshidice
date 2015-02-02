@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.skubit.satoshidice.MainActivity" >
+
+    <item
+        android:id="@+id/action_signin"
+        android:icon="@drawable/ic_menu_login"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="Signin"/>
+    
+    <item
+        android:id="@+id/action_send"
+        android:icon="@drawable/ic_action_send_now"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="Withdraw"/>
+    <item
+        android:id="@+id/action_qrcode"
+        android:icon="@drawable/ic_action_barcode"
+        android:orderInCategory="3"
+        android:showAsAction="always"
+        android:title="Deposit"/>
+    <item
+        android:id="@+id/action_notice"
+        android:orderInCategory="4"
+        android:showAsAction="collapseActionView|withText"
+        android:title="Open Source Licenses">
+    </item>
+</menu>

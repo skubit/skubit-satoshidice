@@ -1,0 +1,41 @@
+{
+    "newLuck": 0.018068683707609,
+    "message": "LOSS! 52.23\/1.68% -0.00001000",
+    "serverRoll": 34219,
+    "serverSalt": "6d2a45e646c2058131ae56643ebb15ad342cc53963263b380f114032f47e2c74",
+    "serverHash": "4f97fdc3fc7314536026a97a17412fde4b9b4a12c6a1a15ae1d36cf2bdbab0d7",
+    "clientRoll": 11,
+    "resultingRoll": 34230,
+    "userBalanceInSatoshis": 286220,
+    "nextRound": {
+        "id": 20191,
+        "hash": "a6dea30b474bf6496d7f7fdbe778d7bfa4d5e63007a52dcdf9e790fe198c58e3",
+        "welcomeMessage": "Welcome to Satoshi Dice!",
+        "maxProfitInSatoshis": 50000000
+    },
+    "status": "success",
+    "bet": {
+        "game": "session",
+        "betID": 20190,
+        "betTX": null,
+        "playerNick": "Testuser",
+        "playerHash": "eefda28857a97b09f9d570633d1df8dc",
+        "betType": "lessthan",
+        "target": 1100,
+        "probability": "1.68",
+        "streak": 1,
+        "streakMessage": "98.32%",
+        "roll": 34230,
+        "rollInPercent": "52.23",
+        "time": "2014-08-14 22:20:18",
+        "result": "loss",
+        "betInSatoshis": 1000,
+        "prize": "x58.446",
+        "prizeInSatoshis": 58446,
+        "payoutInSatoshis": 0,
+        "payoutTX": null,
+        "profitInSatoshis": -1000
+    },
+    "verbose": "Bet is bigger than balance",
+    "queryTimeInSeconds": 0.4121
+}

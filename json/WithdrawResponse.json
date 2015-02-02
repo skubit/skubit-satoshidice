@@ -1,0 +1,8 @@
+{
+    "amountWithdrawn": 0.0009,
+    "transactionId": "16e6f5d313e26102e7ef534cf891cd15d410b1cd292e3c6cfc87ca69726d5d1c",
+    "status": 7,
+    "message": "Withdrawal successful. Bitcoins sent: 0.0009. The transaction id is: 16e6f5d313e26102e7ef534cf891cd15d410b1cd292e3c6cfc87ca69726d5d1c",
+    "confirmationsRequired": 1,
+    "balance": 0.00410557
+}

@@ -1,0 +1,128 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="PurchaseDialog" parent="@style/LightDialogTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="LicenseDialog" parent="@style/LightDialogTheme">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    
+    <style name="LightDialogTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/dialog_full_holo_light</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateUnchanged|adjustResize</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Drawer">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:background">#ffffffff</item>
+    </style>
+
+    <style name="DrawerItem">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="DrawerWithAccounts">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">#ffffffff</item>
+    </style>
+
+    <style name="DrawerWithAccountsList">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:background">#ffffffff</item>
+    </style>
+
+    <style name="DrawerItemLow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:background">#F7F7F7</item> <!-- d3d3d3 -->
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="AccountDrawerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <style name="AccountDrawerDropItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <!-- Wallet -->
+    <style name="wallet_balance_loaded">
+        <item name="android:textColor">@color/wallet_balance_color</item>
+    </style>
+
+    <style name="wallet_balance_invalid">
+        <item name="android:textColor">@color/wallet_balance_color_invalid</item>
+    </style>
+
+    <style name="TransactionDetailsLabel" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/transactiondetails_label</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TransactionStatus">
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

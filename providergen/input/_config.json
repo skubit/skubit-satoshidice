@@ -1,0 +1,13 @@
+{
+    "syntaxVersion":"2",
+    "projectPackageId": "com.skubit.satoshidice",
+    "authority": "com.skubit.satoshidice.provider",
+    "providerJavaPackage": "com.skubit.satoshidice.provider",
+    "providerClassName": "KeyProvider",
+    "sqliteOpenHelperClassName": "KeySQLiteOpenHelper",
+    "sqliteOpenHelperCallbacksClassName": "KeySQLiteOpenHelperCallbacks",
+    "sqliteUpgradeHelperClassName": "KeySQLiteUpgradeHelper",
+    "databaseFileName": "accounts.db",
+    "databaseVersion": 1,
+    "enableForeignKeys": false
+}

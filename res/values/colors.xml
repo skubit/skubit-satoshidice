@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="action_bar_coin_color">#258ABA</color>
+    <color name="action_bar_red">#CB4949</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- Transactions -->
+    <color name="transactiondetails_label">#000000</color>
+    <color name="transaction_positive">#4EB17B</color>
+    <color name="transaction_negative">#B14E4E</color>
+    <color name="transaction_neutral">#000000</color>
+    <color name="transaction_inlinestatus_complete">#9196aa</color>
+    <color name="transaction_inlinestatus_pending">#f89406</color>
+    <color name="wallet_balance_color">#50bf82</color>
+    <color name="wallet_balance_color_invalid">#666666</color>
+
+    <!-- zxing -->
+    <color name="barcode_viewfinder_laser">#ffcc0000</color>
+    <color name="barcode_viewfinder_mask">#60000000</color>
+    <color name="barcode_possible_result_points">#c0ffbd21</color>
+    <color name="barcode_result_view">#b0000000</color>
+    <color name="barcode_result_points">#c099cc00</color>
+
+</resources>

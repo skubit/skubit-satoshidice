@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skubit.satoshidice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.skubit.satoshidice.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.skubit.satoshidice.settings.AliasActivity"
+            android:label="@string/app_name"
+            android:theme="@style/PurchaseDialog"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"  >
+        </activity>       
+        <activity
+            android:name="com.skubit.satoshidice.blockchain.BlockDetailsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.coinbase.zxing.client.android.CaptureActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.skubit.satoshidice.CashoutActivity"
+            android:label="@string/app_name"
+            android:theme="@style/PurchaseDialog"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.skubit.satoshidice.accounts.CreateAccountActivity"
+            android:label="@string/app_name"
+            android:theme="@style/PurchaseDialog"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>        
+         <activity
+            android:name="com.skubit.satoshidice.DepositActivity"
+            android:label="@string/app_name"
+            android:theme="@style/PurchaseDialog"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>   
+          <activity
+            android:name="com.skubit.satoshidice.DisplayLicensesActivity"
+            android:label="@string/app_name">
+        </activity>          
+         <activity
+            android:name="com.skubit.satoshidice.placebet.PlaceBetActivity"
+            android:label="@string/app_name"
+            android:theme="@style/PurchaseDialog"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>     
+         <activity
+            android:name="com.skubit.satoshidice.settings.SecretActivity"
+            android:label="@string/app_name"
+            android:theme="@style/PurchaseDialog"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" >
+        </activity>                          
+        <provider
+            android:name="com.skubit.satoshidice.provider.KeyProvider"
+            android:authorities="com.skubit.satoshidice.provider"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee">
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/wallet_layout"
+	    android:padding="15dp"
+        android:layout_margin="@dimen/home_card_padding"
+        android:background="@drawable/fragment_transactiondetails_bg">
+
+	    <TextView
+            android:id="@+id/wallet_balance_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textColor="#666666"
+            android:text="@string/wallet_balance_label"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <TextView
+	        android:id="@+id/wallet_balance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/wallet_balance_label"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/wallet_balance_def"
+	        style="@style/wallet_balance_invalid"
+	        android:textSize="30sp" />
+	
+	    <TextView
+	        android:id="@+id/wallet_balance_home"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/wallet_balance"
+	        android:layout_alignParentLeft="true"
+	        android:textColor="#666666"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+
+    </RelativeLayout>
+ 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/spacer"/>
+	    
+    <TextView
+        android:id="@+id/wallet_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spacer"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
+        android:text="@string/transactions_refresh_error"
+        android:background="#B30000"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
